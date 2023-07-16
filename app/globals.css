@@ -16,12 +16,182 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+/*.image {*/
+/*  height: auto;*/
+/*}*/
+body{
+  /*//hide scrollbar*/
+    scrollbar-width: none;
+  scrollbar-color: aqua transparent;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+
+  height: 100%;
+}
+
+.video-front-button{
+  width: 243px;
+  height: 92px;
+  border-radius: 10px;
+  background: #FFF;
+  color: #000;
+  font-family: FreightNeo Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.back-button-container{
+  position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 100;
+
+}
+.back-button{
+  width: 34px;
+  height: 66px;
+}
+.page-title{
+  /*margin-top: 33px + 25px;*/
+margin-top: 58px;
+
+}
+.page-title h2{
+  color: #EDEBEB;
+    vertical-align: text-bottom;
+  display: inline-block;
+  font-family: FreightNeo Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 50% */
+  letter-spacing: 1.2px;
+}
+
+.navbar-title{
+  color: #EDEBEB;
+  font-family: Futura;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dark-text{
+  color: #000000;
+}
+.dark-border{
+  border-color: #000000;
+}
+.light-text{
+  color: #EDEBEB;
+}
+.light-border{
+  border-color: #FFFFFF;
+}
+.big-letter-container{
+/*  padding-left: 450px;*/
+/*padding-right: 450px;*/
+  width: 954px;
+  height: auto;
+    margin: 0 auto;
+  display: flex;
+    align-items: center;
+  flex-direction: column;
+}
+.big-letter{
+  width: 100%;
+}
+
+.letters-list {
+  padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 60px;
+    padding-bottom: 105px;
+}
+
+.letter-description-top{
+  position: absolute;
+    top: 67px;
+    left: -233px;
+    z-index: 100;
+  max-width: 306px;
+}
+.letter-description-top p{
+  color: #000;
+  text-align: justify;
+  font-family: FreightNeo Pro;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 70.588% */
+  letter-spacing: 1.19px;
+}
+.letter-footer{
+  margin-top: 53px;
+  margin-bottom: 53px;
+  width: 100%;
+  display: flex;
+    justify-content: end;
+  flex-direction: row;
+
+}
+.letter-footer p {
+  width: 380px;
+  color: #000;
+  text-align: justify;
+  font-family: FreightNeo Pro;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 70.588% */
+  letter-spacing: 1.19px;
+}
+.letter-with-bottom-margin{
+  margin-bottom: 94px;
+}
+
+.galery-container{
+  padding-top: 60px;
+  width: 1380px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+}
+.left-galery{
+  background-color: #D9D9D9;
+  width: 880px;
+}
+.right-galery{
+  margin-top: 365px;
+  display: flex;
+    flex-direction: column;
+  gap: 37px;
+  width: 335px;
+  height: 1042px;
+  background-color: #D9D9D9;
+}
+.nike-A1{
+  width: 100%;
+
+  display: flex;
+    flex-direction: row;
+  padding-bottom: 42px;
+}
+.nike-A1 img {
+    width: 618px;
+
+}
+.nike-A1 .palette{
+    width: 262px;
+    height: 100%;
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+          align-items: end;
+  gap:  10px;
 }
