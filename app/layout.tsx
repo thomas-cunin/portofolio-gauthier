@@ -69,6 +69,7 @@ const lightOrDark = (theme:String) => {
             <meta name="description" content={pageData.description}/>
             <meta name="og:title" content={pageData.title}/>
             <title>{pageData.title}</title>
+            <link rel="stylesheet" href="https://use.typekit.net/hau7afk.css"/>
         </head>
       <body className={inter.className} style={pageData.background ? {backgroundColor : pageData.background} : {backgroundImage : pageData.backgroundImage} }>
       <div className={"flex items-center justify-between pt-4 pb-2 px-8 border-b-2 " + lightOrDark(pageData.theme)}>
