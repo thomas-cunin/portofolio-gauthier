@@ -81,7 +81,7 @@ const lightOrDark = (theme:String) => {
             <Link href="/web" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Web</Link>
           <a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Print</a>
           <a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Web</a>
-          <a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Photographie</a>
+          <Link  href="/photo" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Photographie</Link>
           <a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Scénographie</a>
         </div>
       </div>
