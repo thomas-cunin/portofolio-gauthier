@@ -239,15 +239,15 @@ export default function Home() {
 
                     <div className={'big-letter relative'}>
                         <div className={'letter-description-top'}>
-                            <p>Pour le compte Instagram de VOGUE,
-                                réaliser un alphabet mettant en scène
-                                un produit, un style, une matière ou une personnalité suivant la lettre.</p>
+                            <p>Pour le compte Instagram de <span className={'vogue-upper'}></span>VOGUE,
+                                réaliser un alphabet <span className={'strong'}>mettant en scène
+                                    un produit, un style, une matière ou une personnalité</span> suivant la lettre. </p>
                         </div>
                         <Image src={fullAlphabetArray[22].image} alt={`Lettre ${alphabetArray[0].letter}`} width={954} height={954}/>
                     </div>
                     <div className={'letter-footer'}>
                         <p>
-                            Chaque lettre est remplie de la matière du produit qu’elle représente. Comme c’est le cas ici pour le W de Wetsuit, qui est incorporé de la matière de la combinaison. Le mot représenté sera écrit en premier dans la description.
+                            Chaque lettre est remplie de la matière du produit qu’elle représente. Comme c’est le cas <span className={'strong'}>ici pour le W de Wetsuit, qui est incorporé de la matière de la combinaison.</span> Le mot représenté sera écrit en premier dans la description.
                         </p>
                     </div>
                 </div>

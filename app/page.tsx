@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import portrait from 'public/img.png'
+import Link from "next/link";
 export default function Home() {
     return (
         <>
@@ -12,7 +13,7 @@ export default function Home() {
                     <h2>Nolwenn GAUTHIER</h2>
                     <h4>Directrice Artistique Junior & Designer Graphique
                     </h4>
-                    <p>Votre texte centré</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -22,30 +23,31 @@ export default function Home() {
                         <source src="/home_video.mp4" type="video/mp4"/>
                     </video>
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl">
-                        <div className="flex flex-row gap-8 justify-center items-center">
+                        <div className="flex flex-row justify-center items-center gap-28">
                             <div>
+                                <Link href={'/web'}>
                                 <button className="video-front-button text-black">
-                                    Bouton 1
+                                    WEB
                                 </button>
+                                </Link>
+                            </div>
+                            <div>
+                                {/*<Link href={'/rebranding'}>*/}
+                                <button className="video-front-button text-black">
+                                    REBRANDING
+                                </button>
+                                {/*</Link>*/}
+                            </div>
+                            <div>
+                                <Link href={'/photo'}>
+                                <button className="video-front-button text-black">
+                                    PHOTOGRAPHIE
+                                </button>
+                                </Link>
                             </div>
                             <div>
                                 <button className="video-front-button text-black">
-                                    Bouton 2
-                                </button>
-                            </div>
-                            <div>
-                                <button className="video-front-button text-black">
-                                    Bouton 3
-                                </button>
-                            </div>
-                            <div>
-                                <button className="video-front-button text-black">
-                                    Bouton 4
-                                </button>
-                            </div>
-                            <div>
-                                <button className="video-front-button text-black">
-                                    Bouton 5
+                                    SCÉNOGRAPHIE
                                 </button>
                             </div>
                         </div>

@@ -151,7 +151,7 @@ body {
 }
 
 .letter-footer p {
-    width: 380px;
+    width: 400px;
     color: #000;
     text-align: justify;
     font-family: FreightNeo Pro;
@@ -165,7 +165,47 @@ body {
 .letter-with-bottom-margin {
     margin-bottom: 94px;
 }
-
+.letter-description-top p{
+    color: #000;
+    text-align: justify;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; /* 70.588% */
+    letter-spacing: 1.19px;
+}
+.letter-description-top p .strong {
+    color: #000;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+}
+.vogue-upper{
+    color: #000;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 2.04px;
+}
+.letter-footer p {
+    color: #FFF;
+    text-align: justify;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; /* 70.588% */
+    letter-spacing: 0.85px;
+}
+.letter-footer p .strong {
+    font-weight: 900;
+    letter-spacing: 0.51px;
+}
 .galery-container {
     padding-top: 60px;
     width: 1380px;
@@ -229,4 +269,24 @@ body {
 }
 .A2-description p{
     max-width: 250px;
+}
+
+.A2-p{
+    color: #000;
+    text-align: justify;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.51px;
+}
+.A2-strong{
+    color: #000;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.51px;
 }

@@ -31,8 +31,8 @@ export default function Home() {
                         </div>
                         <div className={'nike-A2'}>
                             <div className={'A2-description'}>
-                                <p>J’ai voulu me focaliser sur le basket, car les mouvements et la tenue de ce sport pouvaient rendre le mannequin et le décor photogéniques.
-                                    J’ai imaginé créer moi- même le décor, un terrain de basket, grâce à du scotch de couleur pour créer les bandes du terrain. </p>
+                                <p className={'A2-p'}>J’ai voulu me focaliser sur le basket, <span className={'A2-strong'}>car les mouvements et la tenue de ce sport pouvaient rendre le mannequin et le décor photogéniques.</span>
+                                    <br/>J’ai imaginé créer moi- même le décor, <span className={'A2-strong'}>un terrain de basket, grâce à du scotch de couleur pour créer les bandes du terrain.</span> </p>
                             </div>
                             <Image src={nikeC} alt="nike-A2" width={'497'} height={'746'} className={'A2-image'}/>
                         </div>
