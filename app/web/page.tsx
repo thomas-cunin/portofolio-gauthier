@@ -2,6 +2,112 @@ import Image from 'next/image'
 import portrait from 'public/img.png'
 import Link from "next/link";
 
+const fullAlphabet = {
+    'a': {
+        letter: 'A',
+        image: '/alphabet/A.jpg',
+    },
+    'b': {
+        letter: 'B',
+        image: '/alphabet/B.jpg',
+    },
+    'c': {
+        letter: 'C',
+        image: '/alphabet/C.jpg',
+    },
+    'd': {
+        letter: 'D',
+        image: '/alphabet/D.jpg',
+    },
+    'e': {
+        letter: 'E',
+        image: '/alphabet/E.jpg',
+    },
+    'f': {
+        letter: 'F',
+        image: '/alphabet/F.jpg',
+    },
+    'g': {
+        letter: 'G',
+        image: '/alphabet/G.jpg',
+    },
+    'h': {
+        letter: 'H',
+        image: '/alphabet/H.jpg',
+    },
+    'i': {
+        letter: 'I',
+        image: '/alphabet/I.jpg',
+    },
+    'j': {
+        letter: 'J',
+        image: '/alphabet/J.jpg',
+    },
+    'k': {
+        letter: 'K',
+        image: '/alphabet/K.jpg',
+    },
+    'l': {
+        letter: 'L',
+        image: '/alphabet/L.jpg',
+    },
+    'm': {
+        letter: 'M',
+        image: '/alphabet/M.jpg',
+    },
+    'n': {
+        letter: 'N',
+        image: '/alphabet/N.jpg',
+    },
+    'o': {
+        letter: 'O',
+        image: '/alphabet/O.jpg',
+    },
+    'p': {
+        letter: 'P',
+        image: '/alphabet/P.jpg',
+    },
+    'q': {
+        letter: 'Q',
+        image: '/alphabet/Q.jpg',
+    },
+    'r': {
+        letter: 'R',
+        image: '/alphabet/R.jpg',
+    },
+    's': {
+        letter: 'S',
+        image: '/alphabet/S.jpg',
+    },
+    't': {
+        letter: 'T',
+        image: '/alphabet/T.jpg',
+    },
+    'u': {
+        letter: 'U',
+        image: '/alphabet/U.jpg',
+    },
+    'v': {
+        letter: 'V',
+        image: '/alphabet/V.jpg',
+    },
+    'w': {
+        letter: 'W',
+        image: '/alphabet/W.jpg',
+    },
+    'x': {
+        letter: 'X',
+        image: '/alphabet/X.jpg',
+    },
+    'y': {
+        letter: 'Y',
+        image: '/alphabet/Y.jpg',
+    },
+    'z': {
+        letter: 'Z',
+        image: '/alphabet/Z.jpg',
+    },
+}
 const alphabet = {
     'a': {
         letter: 'A',
@@ -109,6 +215,7 @@ const alphabet = {
     // },
 }
 const alphabetArray = Object.values(alphabet)
+const fullAlphabetArray = Object.values(fullAlphabet)
 
 export default function Home() {
     console.log(alphabetArray)
@@ -136,7 +243,7 @@ export default function Home() {
                                 réaliser un alphabet mettant en scène
                                 un produit, un style, une matière ou une personnalité suivant la lettre.</p>
                         </div>
-                        <Image src={alphabetArray[0].image} alt={`Lettre ${alphabetArray[0].letter}`} width={954} height={954}/>
+                        <Image src={fullAlphabetArray[22].image} alt={`Lettre ${alphabetArray[0].letter}`} width={954} height={954}/>
                     </div>
                     <div className={'letter-footer'}>
                         <p>
@@ -146,12 +253,12 @@ export default function Home() {
                 </div>
                 <div className={'big-letter-container letter-with-bottom-margin'}>
                     <div className={'big-letter relative'}>
-                        <Image src={alphabetArray[1].image} alt={`Lettre ${alphabetArray[1].letter}`} width={954} height={954}/>
+                        <Image src={fullAlphabetArray[23].image} alt={`Lettre ${alphabetArray[1].letter}`} width={954} height={954}/>
                     </div>
                 </div>
                 <div className={'big-letter-container letter-with-bottom-margin'}>
                     <div className={'big-letter relative'}>
-                        <Image src={alphabetArray[2].image} alt={`Lettre ${alphabetArray[2].letter}`} width={954} height={954}/>
+                        <Image src={fullAlphabetArray[24].image} alt={`Lettre ${alphabetArray[2].letter}`} width={954} height={954}/>
                     </div>
                 </div>
                 <div className={'big-letter-container'}>
