@@ -55,7 +55,15 @@ export default function RootLayout({
             theme: 'dark',
             backgroundImage: 'url(/nike/gray_bg.png)',
         }
-    }
+    } else if (pathname.includes('/scenographie')) {
+            pageData = {
+                ... pageData,
+                title: 'Alphabet Vogue',
+                description: 'Directrice Artistique Junior & Designer Graphique',
+                background: '#FFFFFF',
+                theme: 'light',
+            }
+        }
 const lightOrDark = (theme:String) => {
     if (theme === 'light') {
         return 'dark-text dark-border bg-white'
