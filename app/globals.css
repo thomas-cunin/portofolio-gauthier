@@ -142,20 +142,20 @@ body {
 
 .back-button-container {
     position: absolute;
-    top: 50px;
+    top: 73px;
     left: 50px;
     z-index: 100;
 
 }
 
 .back-button {
-    width: 34px;
-    height: 66px;
+    width: 17px;
+    height: 33px;
 }
 
 .page-title {
     /*margin-top: 33px + 25px;*/
-    margin-top: 58px;
+    margin-top: 65px;
 
 }
 
@@ -176,8 +176,11 @@ body {
     font-family: Futura, "Comic Sans MS", sans-serif;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
+}
+.navbar-titles{
+    margin-right: 70px;
 }
 
 .dark-text {
@@ -389,9 +392,10 @@ body {
 }
 
 .scene-container-A{
+    margin-top: 60px;
     justify-content: space-between;
     gap: 113px;
-    border-bottom:  1px solid #000;
+    border-bottom: 1px solid #000;
 }
 .scene-container-A .image-A1 {
     width: 1154px;
@@ -399,15 +403,106 @@ body {
 
 }
 .scene-container-A .image-B1 {
-    width: 242px;
-    height: 348px;
+    width: 348px;
+    height: 242px;
+   border: 0.5px solid #000;
 }
 .scene-container-A .image-B2 {
     margin-top: 28px;
     width: 348px;
     height: 260px;
+    border: 0.5px solid #000;
 }
 .scene-container-A .sub-container{
+    margin-top: 54px;
     margin-right: 112px;
     gap: 28px;
+}
+.sub-container .palette{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 12px;
+}
+.scene-container-B{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+.scene-container-C{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 240px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.scene-container-C .sub-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 54px;
+    gap: 22px;
+}
+
+.scene-container-C .sub-container .image-A1{
+    width: 331px;
+    height: 196px;
+    border: 0.5px solid #000;
+}
+.scene-container-C .sub-container .image-A2{
+    width: 331px;
+    height: 248px;
+    border: 0.5px solid #000;
+}
+.scene-container-C .image-B1{
+    width: 1220px;
+    height: auto;
+}
+.scene-container-D{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+.scene-container-E{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+/*gap: 100px;*/
+}
+.scene-container-E .image-A1{
+    width: 1172px;
+    height: auto;
+}
+.scene-container-E .sub-container{
+    margin-top: 132px;
+    margin-right: 94px;
+width: 416px;
+    height: 416px;
+
+}
+.scene-container-E .sub-container p{
+    text-align: justify;
+    color: #473015;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.85px;
+}
+.scene-container-E .sub-container p .strong{
+    color: #473015;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.85px;
 }
