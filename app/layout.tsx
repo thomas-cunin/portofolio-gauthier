@@ -65,6 +65,14 @@ export default function RootLayout({
                 theme: 'light',
             }
         }
+    else if (pathname.includes('/print')) {
+        pageData = {
+            ... pageData,
+            title: 'CV',
+            description: 'Directrice Artistique Junior & Designer Graphique',
+            background: '#CBCCC0',
+            theme: 'light',
+        }   }
 const lightOrDark = (theme:String) => {
     if (theme === 'light') {
         return 'dark-text dark-border bg-white'
@@ -89,7 +97,7 @@ const lightOrDark = (theme:String) => {
         <div className="flex space-x-6 navbar-titles">
           <Link href="/cv" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>CV</Link>
             <Link href="/web" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Web</Link>
-          <a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Print</a>
+          <Link href="/print" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Print</Link>
           {/*<a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Web</a>*/}
           <Link  href="/photo" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Photographie</Link>
             <Link  href="/scenographie" className={"navbar-title text-black " + lightOrDark(pageData.theme)}><a href="#" className={"navbar-title text-black " + lightOrDark(pageData.theme)}>Scénographie</a> </Link>
@@ -97,7 +105,7 @@ const lightOrDark = (theme:String) => {
       </div>
       <div className={'relative'}>
         <div className={'back-button-container'} style={{display: isHome ? 'none' : 'block'}}>
-            <Link href={'/'}>
+            <Link href={/\/web\/[a-zA-Z]/.test(pathname) ? '/web' : '/'}>
             <div className={'back-button'}>
                 {
                     pageData.theme === 'dark' ? (

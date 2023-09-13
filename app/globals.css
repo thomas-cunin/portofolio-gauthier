@@ -398,9 +398,9 @@ body {
     border-bottom: 1px solid #000;
 }
 .scene-container-A .image-A1 {
-    width: 1154px;
-    height: 716px;
-
+    width: auto;
+    height: 660px;
+    /*min-width: 500px;*/
 }
 .scene-container-A .image-B1 {
     width: 348px;
@@ -414,12 +414,13 @@ body {
     border: 0.5px solid #000;
 }
 .scene-container-A .sub-container{
-    margin-top: 54px;
+    /*margin-top: 54px;*/
+    margin-top: 20px;
     margin-right: 112px;
     gap: 28px;
 }
 .sub-container .palette{
-    margin-top: 32px;
+    margin-top: 22px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -505,4 +506,127 @@ width: 416px;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 0.85px;
+}
+
+/* KIABI */
+
+.k-image-A1{
+    margin-top: 60px;
+    width: 100%;
+}
+.k-image-A1 img{
+    width: 100%;
+    height: auto;
+}
+/*<div className={'k-container'}>
+                    <div className="sub-container-B1">
+                        <img src="" alt=""/>
+                        <div className={'palette'}>
+                            <h3>Palette de couleurs</h3>
+                        </div>
+                    </div>
+                    <div className="sub-container-B2">
+                        <p className={'b2-p1'}>Lorem ipsum dolor</p>
+                        <img src="" alt=""/>
+                        <p className={'b2-p2'}></p>
+                    </div>
+                </div>*/
+.k-container{
+    margin-top: 60px;
+    margin-bottom: 136px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+.k-container .sub-container-B1{
+    margin-top: 126px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    margin-left: 148px;
+}
+.k-container .sub-container-B1 .palette{
+    /*margin-top: 54px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 12px;
+}
+.k-container .sub-container-B1 .palette img{
+width: 45px;
+height: 45px;
+}
+
+.k-container .sub-container-B2{
+margin-top: 54px;
+}
+.k-container .sub-container-B2 .b2-p1{
+    position: absolute;
+    /* 50% of left on the left of p */
+    left: 66% ;
+    max-width: 400px;
+    text-align: justify;
+    color: #6F6353;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.85px;
+}
+.k-container .sub-container-B2 .b2-p1 .strong {
+    font-weight: 900;
+    letter-spacing: 0.595px;
+}
+.k-container .sub-container-B2 .b2-p2{
+    margin-top: 20px;
+    position: absolute;
+    /* 50% of left on the left of p */
+    left: 66% ;
+    max-width: 400px;
+    text-align: justify;
+    color: #6F6353;
+    font-family: FreightNeo Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.85px;
+}
+.k-container .sub-container-B2 .b2-p2 .strong {
+    font-weight: 900;
+    letter-spacing: 0.595px;
+}
+.k-container .sub-container-B2 img{
+    margin-top: 66px;
+    width: 1113px;
+    height: 742px;
+
+}
+.k-image-A2{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+.k-image-A2 img{
+    width: 100%;
+    height: auto;
+}
+.k-big-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.k-big-image{
+    width: 1093px;
+    height: 1524px;
+}
+.k-big-image img{
+    width: 100%;
+    height: auto;
 }

@@ -1,7 +1,4 @@
-import Image from 'next/image'
-import portrait from 'public/img.png'
-import Link from "next/link";
-
+import Image from "next/image";
 const fullAlphabet = {
     'a': {
         letter: 'A',
@@ -216,58 +213,21 @@ const alphabet = {
 }
 const alphabetArray = Object.values(alphabet)
 const fullAlphabetArray = Object.values(fullAlphabet)
-
-export default function Home() {
-    console.log(alphabetArray)
+// @ts-ignore
+export default function Home({params: {letter}}) {
+    // find the letter in the alphabet array
+    const letterIndex = fullAlphabetArray.findIndex((letterObject) => letterObject.letter === letter || letterObject.letter.toLowerCase() === letter)
     return (
         <>
             <div className="relative flex flex-col justify-between w-full items-center">
-                <div className={'page-title'}>
-                    <h2 style={{verticalAlign:'text-bottom'}}>CRÉATION D’UN ALPHABET FICTIF POUR LA MARQUE VOGUE</h2>
-                </div>
-                <div className={'letters-list'}
-                     style={{display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: '20px'}}>
-                    {Object.values(alphabet).map((lettre, index) => (
-                        <div key={index}>
-                            <Link href={`/web/` + lettre.letter}>
-                            <img src={lettre.image} alt={`Lettre ${lettre.letter}`} style={{width: '100%'}}/>
-                            </Link>
-                            </div>
-                    ))}
-                </div>
-                <div className={'big-letter-container'}>
-
-                    <div className={'big-letter relative'}>
-                        <div className={'letter-description-top'}>
-                            <p>Pour le compte Instagram de <span className={'vogue-upper'}></span>VOGUE,
-                                réaliser un alphabet <span className={'strong'}>mettant en scène
-                                    un produit, un style, une matière ou une personnalité</span> suivant la lettre. </p>
+                <div className={'page-title'} style={{marginTop:'75px'}}>
+                    <div className={'big-letter-container'}>
+                        <div className={'big-letter relative'}>
+                            <Image src={fullAlphabetArray[letterIndex].image} alt={`Lettre ${alphabetArray[letterIndex].letter}`} width={954} height={954}/>
                         </div>
-                        <Image src={fullAlphabetArray[22].image} alt={`Lettre ${alphabetArray[0].letter}`} width={954} height={954}/>
-                    </div>
-                    <div className={'letter-footer'}>
-                        <p>
-                            Chaque lettre est remplie de la matière du produit qu’elle représente. Comme c’est le cas <span className={'strong'}>ici pour le W de Wetsuit, qui est incorporé de la matière de la combinaison.</span> Le mot représenté sera écrit en premier dans la description.
-                        </p>
                     </div>
                 </div>
-                <div className={'big-letter-container letter-with-bottom-margin'}>
-                    <div className={'big-letter relative'}>
-                        <Image src={fullAlphabetArray[23].image} alt={`Lettre ${alphabetArray[1].letter}`} width={954} height={954}/>
-                    </div>
-                </div>
-                <div className={'big-letter-container letter-with-bottom-margin'}>
-                    <div className={'big-letter relative'}>
-                        <Image src={fullAlphabetArray[24].image} alt={`Lettre ${alphabetArray[2].letter}`} width={954} height={954}/>
-                    </div>
-                </div>
-                <div className={'big-letter-container'}>
-                    <div className={'big-letter relative'}>
-                        <video autoPlay loop muted>
-                            <source src="/alphabet/letters_animation_parrallax.mp4" type="video/mp4"/>
-                        </video>
-                    </div>
-                </div>
+
             </div>
 
         </>
