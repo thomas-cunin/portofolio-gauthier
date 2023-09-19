@@ -230,6 +230,7 @@ export default function Home() {
                     {Object.values(alphabet).map((lettre, index) => (
                         <div key={index}>
                             <Link href={`/web/` + lettre.letter}>
+                            {/*  @ts-ignore  */}
                             <img src={lettre.image} alt={`Lettre ${lettre.letter}`} style={{width: '100%'}}/>
                             </Link>
                             </div>
