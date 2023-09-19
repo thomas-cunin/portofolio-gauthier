@@ -20,7 +20,7 @@ export default function Home() {
                     <h2 style={{verticalAlign: 'text-bottom', color: '#8E6638'}}>POP-UP STORE POUR LA MARQUE SACAI</h2>
                 </div>
                 <div className={'flex flex-row w-full scene-container-A'}>
-                    <Image src={Vue1} alt="Scene 1" className={'image-A1'} height={716} width={1154}/>
+                    <Image src={Vue1} alt="Scene 1" className={'image-A1'} height={600} width={1355}/>
                     <div className={'sub-container'}>
                         <Image src={Dessin1} alt={'Dessin 1'} className={'image-B1'}/>
                         <Image src={Dessin2} alt={'Dessin 2'} className={'image-B2'}/>

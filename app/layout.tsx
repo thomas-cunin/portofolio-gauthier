@@ -8,6 +8,7 @@ import Image from "next/image";
 import backIcon from 'public/back-icon.png';
 import backIconBlack from 'public/back-icon-black.png';
 import logoLigth from 'public/NG_logo.png';
+import logoDark from 'public/NG_logo_white.png';
 //import next navigation
 
 const inter = Inter({ subsets: ['latin'] })
@@ -78,8 +79,16 @@ const lightOrDark = (theme:String) => {
         return 'dark-text dark-border bg-white'
     } else {
         return 'ligth-text light-border'
+    }}
+
+    const lightOrDarkLogo = (theme:String) => {
+        if (theme === 'light') {
+            return logoLigth
+        } else {
+            return logoDark
+        }
     }
-}
+
   return (
       <html lang="fr">
         <head>
@@ -91,7 +100,7 @@ const lightOrDark = (theme:String) => {
       <body className={inter.className} style={pageData.background ? {backgroundColor : pageData.background} : {backgroundImage : pageData.backgroundImage} }>
       <div className={"flex items-center justify-between pt-4 pb-2 px-8 border-b " + lightOrDark(pageData.theme)}>
         <a href="#" className="block">
-          <Image src={logoLigth} alt="Logo" width={24} height={24}/>
+          <Image src={lightOrDarkLogo(pageData.theme)} alt="Logo" width={24} height={24}/>
         </a>
 
         <div className="flex space-x-6 navbar-titles">

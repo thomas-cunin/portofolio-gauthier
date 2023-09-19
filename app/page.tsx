@@ -20,7 +20,7 @@ export default function Home() {
             <div className="relative w-full h-auto">
                 <div className="relative aspect-[16/9] overflow-hidden">
                     <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
-                        <source src="/home_video.mp4" type="video/mp4"/>
+                        <source src="" type="video/mp4"/>
                     </video>
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl">
                         <div className="flex flex-row justify-center items-center gap-28">

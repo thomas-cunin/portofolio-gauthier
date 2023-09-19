@@ -394,31 +394,38 @@ body {
 }
 
 .scene-container-A{
+    /*width = 1355 + 350 +200*/
+    width: 100%;
     margin-top: 60px;
     justify-content: space-between;
-    gap: 113px;
+    flex-shrink: 0;
+    /*gap: 113px;*/
     border-bottom: 1px solid #000;
 }
 .scene-container-A .image-A1 {
-    width: auto;
-    height: 660px;
+    width: 1200px;
+    height: 744px;
     /*min-width: 500px;*/
 }
 .scene-container-A .image-B1 {
+    /*display: block;*/
     width: 348px;
     height: 242px;
+    margin-right: 113px;
    border: 0.5px solid #000;
 }
 .scene-container-A .image-B2 {
+    /*display: block;*/
     margin-top: 28px;
     width: 348px;
     height: 260px;
+    margin-right: 113px;
     border: 0.5px solid #000;
 }
 .scene-container-A .sub-container{
     /*margin-top: 54px;*/
     margin-top: 20px;
-    margin-right: 112px;
+    margin-left: 72px;
     gap: 28px;
 }
 .sub-container .palette{
@@ -427,6 +434,7 @@ body {
     flex-direction: row;
     justify-content: start;
     gap: 12px;
+    margin-bottom: 11px;
 }
 .scene-container-B{
     margin-top: 60px;
@@ -439,13 +447,15 @@ body {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    gap: 240px;
+    justify-content: space-between;
+    /*gap: 240px;*/
+    flex-shrink:  0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
 .scene-container-C .sub-container{
     display: flex;
+margin-left: 80px;
     flex-direction: column;
     margin-top: 54px;
     gap: 22px;
@@ -476,7 +486,7 @@ body {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
 /*gap: 100px;*/
 }
 .scene-container-E .image-A1{
@@ -485,7 +495,7 @@ body {
 }
 .scene-container-E .sub-container{
     margin-top: 132px;
-    margin-right: 94px;
+    margin-left: 140px;
 width: 416px;
     height: 416px;
 
