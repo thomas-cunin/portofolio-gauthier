@@ -6,6 +6,7 @@ import Image3 from 'public/kiabi/affiche.jpg';
 import Circle1 from 'public/kiabi/color-circle-1.png';
 import Circle2 from 'public/kiabi/color-circle-2.png';
 import Circle3 from 'public/kiabi/color-circle-3.png';
+import Appli from 'public/kiabi/Appli.png';
 export default function Home() {
     return (
         <>
@@ -28,7 +29,7 @@ export default function Home() {
                     <div className="sub-container-B2">
                         <p className={'b2-p1'}>Refonte de l’identité visuelle de Kiabi dans un nouveau positionnement premium, avec pour <span className={"strong"}>concept la famille, un style bohème chic, et une baseline qui reflète l’intemporel de la marque.</span>
                         </p>
-                        <Image src={Logo} alt={''} height={600} width={900} />
+                        <Image src={Appli} alt={''} height={600} width={900} />
                         <p className={'b2-p2'}>L’application permet de suivre en direct les défilés au sein des boutiques et de pouvoir acheter <span className={"strong"}>en ligne les articles portés lors du défilé. A la fin du défilé, les clients peuvent venir récupérer leurs commandes. </span></p>
                     </div>
                 </div>
